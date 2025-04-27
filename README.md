@@ -18,14 +18,9 @@ For example, if I had a rule for 192.168.1.0/24 to block SSH traffic and a rule 
 A packet for 192.168.1.15 will return DENY and a packet for 192.168.1.224 will ALLOW traffic. 
 
 Starting The Project:
-
-When you open the project change directories to the "code" directory:
-    
-    cd code
-
 Run the following command in the terminal:
 
-    g++ ../app/Trie.cpp ../app/Firewall.cpp ../app/CLI.cpp Main.cpp -o StatelessFirewall
+    g++ Trie.cpp Firewall.cpp CLI.cpp Main.cpp -o StatelessFirewall
 
 Run the Demo:
 
